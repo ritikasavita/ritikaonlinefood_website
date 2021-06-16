@@ -1,0 +1,270 @@
+*{
+    margin:0;
+    padding:0;
+}
+/* ----------------Navbar-------------- */
+#navbar::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    z-index: -1;
+    height:100%;
+    width:100%;
+    
+}
+#navbar{
+    display:flex;
+    align-items: center;
+    position: relative;
+}
+
+/* ----------------logo image-------------------- */
+#logo{
+    margin:10px 20px;
+    
+}
+#logo img{
+    height:30px;
+    margin:3px 6px;
+}
+
+/* ---------------list content------------------ */
+#list {
+    display: flex;
+    padding:2px 2px;
+
+    
+    list-style: none;
+    
+}
+#list li a{
+    color: white;
+    padding:10px;
+    display: block;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    
+
+    text-decoration: none;
+}
+#list li a:hover{
+    color:black;
+    background-color: white;
+    border-radius: 40px;
+}
+
+/* -----------end of navigation bar-------------- */
+
+
+/* ----------Section----------------- */
+
+#section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3px 200px;
+    
+    
+}
+
+#section::before{
+    content: "";
+    position: absolute;
+    background-image: url('../back.jpg')  ;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* height: 100px; */
+    background-size: 100% 100%;
+    
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    
+    
+}
+
+#h-primary{
+    margin-top: 50px;
+    font-size: 3.8rem;
+    color:black;
+    padding: 20px;
+    /* text-align: center; */
+}
+#section p{
+    color: black;
+    text-align: center;
+}
+#btn{
+    background-color: rgb(54, 40, 20);
+    color: white;
+    padding:6px 15px;
+    margin-top: 60px;
+    border: 5px solid rgb(54, 40, 20);
+    border-radius: 25px;
+    
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    cursor: pointer;
+}
+/* ----------services---------- */
+
+
+
+.sec_services{
+    margin-top: 230px;
+    margin-bottom: 20px;
+    
+}
+
+
+#Services{
+    margin: 34px;
+    
+    display: flex;
+    
+    
+}
+#Services .box{
+    height: 280px;
+    border: 5px solid plum;
+    border-radius: 30px;
+    margin: 10px;
+    padding: 10px;
+    
+    
+}
+#Services .box img{
+    height: 120px;
+    padding: 20px;
+    display: block;
+    margin: auto;
+    
+}
+
+    
+
+/* --------utility classes--- */
+.h-primary{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size:40px ;
+
+
+}
+.h-secondary{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+    font-size: 20px;
+}
+#Services .box p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* --------------------------------- */
+
+/* ----------clients------------------------------------------------------ */
+ #client-section{ 
+    height: 405px;
+    position: relative;
+} 
+
+#clientslist{
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+}
+
+#clientslist .clientitems img{
+    height: 120px;
+    padding-top: 56px;
+}
+
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url('../client.jpg') center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 300px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.3;
+
+
+
+}
+/* -----------end of client section---------------- */
+
+/* --------Contact us------------------------------------------------------- */
+#contact{
+    position: relative;
+}
+#contactitem::before{
+    content: "";
+    position: absolute;
+    background: url('../contact.jpg')no-repeat center;
+    background-size: 100% 100%;
+    height: 850px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.3;
+    
+}
+#contactitem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#contactitem label{
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+#butn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin:10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    border-radius: 10px;
+    background-color: cornflowerblue;
+    color: black;
+}
+
+#contactitem  input,textarea {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    width: 400px;
+
+}
+
+footer{
+    border:2px solid black ;
+    background-color: thistle;
+    display: flex;
+    flex-direction: column;
+    height: 140px;
+    
+    
+    color: black;
+    
+}
+.images{
+    display: flex;
+    padding: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+/* --------------------end ------------------------------------------- */

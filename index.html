@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online food dilvery|myonlinefood.com</title>
+    <link rel="stylesheet" href="css1/cssnav.css">
+
+    <script>
+        function geterror() {
+            if (document.getElementById('Name').value == "") {
+                alert('please enter the name field');
+                return false;
+
+            }
+            else if (document.getElementById('Email').value == "") {
+                alert('please enter the Email field');
+                return false;
+
+            }
+            else if (document.getElementById('ContactNo').value == "") {
+                alert('please enter the Contact Number field');
+                return false;
+
+            }
+            else if (document.getElementById('Queries').value == "") {
+                alert('please enter your Queries');
+                return false;
+
+            }
+            else {
+                alert('Form is Submitted succesfully');
+                return false;
+
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo"><img src="icon.png" alt="myonlinefood.com"></div>
+        <div id="list">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact </a></li>
+            <li><a href="#">About Us</a></li>
+        </div>
+    </nav>
+
+    <section id="section">
+        <h1 id="h-primary">Welcome to Ritika Onlinefood</h1>
+        <p>In this Online food order website you can order any type of Food.</p>
+        <p>Please click on Order Now and place your order </p>
+        <button id="btn">
+            <h1>Order Now</h1>
+        </button>
+
+    </section>
+
+    <section class="sec_services">
+        <h1 class=" h-primary center ">Our Services</h1>
+        <div id="Services">
+
+            <div class="box">
+                <img src="img/pizza.jpg" alt="" class="center">
+                <h1 class="h-secondary center">Fast Food</h1>
+                <p class=" center">Pizza , burgger ,etc all type of fast food you can get from here !</p>
+            </div>
+
+            <div class="box">
+                <img src="img/dosa.jpg" alt="" class="center">
+                <h1 class="h-secondary center"> South Indian Food</h1>
+                <p class="center">As south Indian food are very famous you can order from this website also!</p>
+            </div>
+            <div class="box">
+                <img src="img/delivery.png" alt="" class="center">
+                <h1 class="h-secondary center"> Home delivery </h1>
+                <p class="center">Yes ! you can order the food and also home delivery of food also available </p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="client-section">
+        <h1 class="h-primary center">Our clients</h1>
+        <div id="clientslist">
+            <div class="clientitems">
+                <img src="img/apple1.png" alt="our clients">
+            </div>
+
+            <div class="clientitems">
+                <img src="img/microsoft.png" alt="our clients">
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h1 class="h-primary center">Contact Us</h1>
+        <div id="contactitem">
+            <form onsubmit="return geterror()">
+                <div class="formitem">
+                    <label for="Name">Name:</label><br>
+                    <input type="text" name="name" id="Name" placeholder="Enter your Name">
+                </div>
+                <div class="formitem">
+                    <label for="Email">Email:</label><br>
+                    <input type="text" name="email" id="Email" placeholder="Enter your email">
+                </div>
+                <div class="formitem">
+                    <label for="contactNo">Contact No:</label><br>
+                    <input type="text" name="ContactNo" id="ContactNo" placeholder="Enter your Contact No.">
+                </div>
+                <div class="formitem">
+                    <label for="text">Queries:</label><br>
+                    <textarea name="Queries" id="Queries" cols="30" rows="10"></textarea>
+                </div>
+                <div class="formitem">
+                    <button id="butn">Submit</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <br>
+
+    <footer class="center">
+
+
+        <p>Connect to us</p>
+
+        <div class="images">
+            <div id="img1">
+                <img src="img/facebook (1).svg" alt="">
+            </div>
+            <div id="img2">
+                <img src="img/instagram.svg" alt="">
+            </div>
+        </div>
+        <p>Copyright &copy;www.ritikaonlinefood.com;</p>
+    </footer>
+
+</body>
+
+</html>
